@@ -1,0 +1,72 @@
+.backlog { display: grid; gap: 20px; }
+.hero { display: grid; grid-template-columns: 1fr minmax(320px,.9fr); gap: 35px; align-items: center; min-height: 250px; padding: 28px 32px; border: 1px solid #36423a; border-radius: 16px; background: radial-gradient(ellipse at 0 0,#2a3930 0,transparent 53%),linear-gradient(110deg,#1c231f,#171c19); }
+.heroCopy { max-width: 510px; }
+.label { color: var(--accent); font-size: 9px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.hero h1 { margin-top: 9px; font: 48px/.98 Georgia,serif; letter-spacing: -.05em; }
+.heroCopy > p:nth-of-type(2) { max-width: 360px; margin-top: 12px; color: var(--muted); font-size: 11px; }
+.heroStats { display: flex; gap: 23px; margin-top: 23px; }
+.heroStats span { display: grid; color: var(--muted); font-size: 8px; }
+.heroStats strong { color: var(--accent); font: 20px Georgia,serif; }
+.nextCard { display: grid; grid-template-columns: 112px 1fr; gap: 16px; align-items: center; padding: 14px; border: 1px solid #3a453e; border-radius: 11px; background: #222a25; }
+.gameCover { position: relative; width: 100px; height: 118px; display: flex; flex-direction: column; justify-content: space-between; padding: 9px; overflow: hidden; border-radius: 5px; color: white; isolation: isolate; box-shadow: 0 5px 16px rgb(0 0 0 / 22%); }
+.gameCover::before { position: absolute; z-index: -1; width: 135px; height: 135px; top: -49px; right: -50px; border: 1px solid rgb(255 255 255 / 37%); border-radius: 50%; content: ""; box-shadow: 0 0 0 11px rgb(255 255 255 / 9%),0 0 0 22px rgb(255 255 255 / 8%); }
+.gameCover svg { width: 17px; }
+.gameCover span { font: 800 10px/1 sans-serif; letter-spacing: .12em; }
+
+.hades { background: linear-gradient(145deg,#ec916b,#b34a44 54%,#372c48); }.zelda { background: linear-gradient(142deg,#b8d2a6,#59907e 56%,#304e56); }.seaStars { background: linear-gradient(140deg,#70c1da,#5863a9 55%,#362951); }.celeste { background: linear-gradient(140deg,#dba5d2,#8879c1 54%,#414273); }.disco { background: linear-gradient(145deg,#e4b965,#bc7341 55%,#3b3548); }.well { background: linear-gradient(140deg,#95c96d,#4c6c45 55%,#202e2b); }.newGame { background: linear-gradient(140deg,#87a896,#5f796f 53%,#3c534a); }
+.nextCard > div:last-child > span { color: var(--accent); font-size: 7px; font-weight: 800; letter-spacing: .13em; }
+.nextCard h2 { overflow: hidden; margin-top: 5px; font: 19px/1.08 Georgia,serif; text-overflow: ellipsis; }
+.nextCard p { margin-top: 5px; color: var(--muted); font-size: 8px; }
+.nextCard button { min-height: 31px; margin-top: 11px; padding: 0 10px; border: 0; border-radius: 5px; color: #172018; background: var(--accent); font-size: 8px; font-weight: 750; }
+.nextCard button:hover { box-shadow: 0 0 0 3px rgb(193 241 110 / 15%); }
+.catalog { padding: 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+.catalogHead { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.catalogHead h2,.addGame h2 { font: 24px Georgia,serif; }
+.catalogHead p,.addGame p { margin-top: 3px; color: var(--muted); font-size: 9px; }
+.search { width: 215px; height: 34px; display: flex; align-items: center; gap: 7px; padding: 0 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--muted); }
+.search svg { width: 13px; }
+.search input { width: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; font-size: 9px; }
+.controls { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 15px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.statusFilters { display: flex; flex-wrap: wrap; gap: 5px; }
+.statusFilters button { min-height: 29px; padding: 0 9px; border: 1px solid transparent; border-radius: 5px; color: var(--muted); background: transparent; font-size: 8px; }
+.statusFilters button:hover,.statusFilters .activeStatus { border-color: #586449; color: var(--accent); background: #2d362c; }
+.platformSelect { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 8px; white-space: nowrap; }
+.platformSelect select { min-width: 101px; height: 30px; padding: 0 8px; border: 1px solid var(--line); border-radius: 5px; color: var(--ink); background: var(--paper); font-size: 8px; }
+.gameGrid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; padding-top: 13px; }
+.gameCard { min-width: 0; padding: 11px; border: 1px solid #37413b; border-radius: 9px; background: #1d2420; }
+.cardTop { display: grid; grid-template-columns: 64px minmax(0,1fr) 24px; align-items: start; gap: 11px; }
+.cardTop .gameCover { width: 63px; height: 76px; padding: 6px; border-radius: 4px; }
+.cardTop .gameCover svg { width: 12px; }
+.cardTop .gameCover span { font-size: 8px; }
+.gameInfo { min-width: 0; }
+.platformTag { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: 7px; }
+.platformTag i { width: 3px; height: 3px; border-radius: 50%; background: var(--accent); }
+.gameInfo h3 { overflow: hidden; margin-top: 4px; font: 15px/1.1 Georgia,serif; text-overflow: ellipsis; }
+.statusLabel { display: inline-block; margin-top: 5px; padding: 2px 6px; border-radius: 4px; color: var(--accent); background: #30392d; font-size: 7px; }
+.hours { display: flex; align-items: center; gap: 4px; margin-top: 6px; color: var(--muted); font-size: 7px; }
+.hours svg { width: 10px; }
+.removeButton { width: 23px; height: 25px; display: grid; place-items: center; border: 0; color: var(--muted); background: transparent; }
+.removeButton:hover { color: #ef8f7f; }
+.removeButton svg { width: 12px; }
+.progress { height: 3px; overflow: hidden; margin: 10px 0 8px; border-radius: 3px; background: #37423b; }
+.progress span { display: block; height: 100%; background: var(--accent); }
+.cardBottom { display: flex; align-items: end; gap: 8px; }
+.cardBottom label { display: grid; gap: 4px; }
+.cardBottom label span { color: var(--muted); font-size: 7px; }
+.cardBottom select { height: 28px; min-width: 86px; padding: 0 5px; border: 1px solid #3c4a40; border-radius: 5px; color: var(--ink); background: #171d19; font-size: 8px; }
+.logButton { min-height: 28px; margin-left: auto; padding: 0 8px; border: 1px solid #4a5c42; border-radius: 5px; color: var(--accent); background: #273126; font-size: 8px; font-weight: 700; }
+.logButton:hover { border-color: var(--accent); }
+.completed { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; color: var(--accent); font-size: 8px; }
+.completed svg { width: 12px; }
+.empty { padding: 33px 0; color: var(--muted); text-align: center; font-size: 10px; }
+.addGame { display: grid; grid-template-columns: 1.1fr 1.5fr .8fr auto; align-items: center; gap: 10px; padding: 16px; border: 1px solid var(--line); border-radius: 11px; background: #202722; }
+.addGame label { display: grid; gap: 4px; }
+.addGame label span { color: var(--muted); font-size: 8px; }
+.addGame input,.addGame select { width: 100%; min-width: 0; height: 34px; padding: 0 8px; border: 1px solid #3e4b41; border-radius: 5px; color: var(--ink); background: #171d19; font-size: 8px; }
+.addGame > button { height: 34px; display: inline-flex; align-items: center; gap: 5px; padding: 0 9px; border: 0; border-radius: 5px; color: #172018; background: var(--accent); font-size: 8px; font-weight: 750; white-space: nowrap; }
+.addGame > button svg { width: 12px; }
+.recent { display: flex; align-items: baseline; gap: 11px; padding: 0 2px; color: var(--muted); }
+.recent span { color: var(--accent); font-size: 7px; font-weight: 800; letter-spacing: .12em; }
+.recent p { font-size: 8px; }
+@media(max-width:900px) { .hero { grid-template-columns: 1fr; gap: 20px; } .nextCard { max-width: 500px; } .addGame { grid-template-columns: 1fr 1fr; } }
+@media(max-width:650px) { .hero { padding: 22px 19px; } .hero h1 { font-size: 42px; } .catalog { padding: 13px; } .catalogHead { align-items: stretch; flex-direction: column; } .search { width: 100%; } .controls { align-items: stretch; flex-direction: column; } .statusFilters { overflow-x: auto; flex-wrap: nowrap; } .statusFilters button { white-space: nowrap; } .platformSelect { justify-content: space-between; } .gameGrid { grid-template-columns: 1fr; } .addGame { grid-template-columns: 1fr; } .addGame > button { justify-content: center; } .recent { flex-direction: column; gap: 4px; } }
