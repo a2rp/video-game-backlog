@@ -12,11 +12,11 @@ The top card highlights the next game and summarizes saved games and logged hour
 
 ## Features and use
 
-Add a game and choose its platform. Use the platform and status filters or search the catalog. Change Play status from a card selector. Select Log 1 hour to update playtime and progress; reaching the estimated goal marks the game complete. Remove a game with the trash button and confirm.
+Add a game and choose its platform. Use the platform and status filters or search the catalog. Change Play status from a card selector. Starting a game changes its status without adding playtime; Log 1 hour records an hour and reaching the estimated goal marks the game complete. Remove a game with the trash button and confirm.
 
 ## Data and limits
 
-Game details, status, estimated hours, and logged hours are stored in localStorage. New games use a 20-hour estimate. The app is a personal tracker and does not connect to game platforms.
+Game details, status, estimated hours, and logged hours are stored in this browser's localStorage. New games use a 20-hour estimate. The app is a personal tracker and does not connect to game platforms or sync across devices.
 
 ## Run locally
 

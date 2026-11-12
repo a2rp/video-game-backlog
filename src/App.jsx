@@ -15,7 +15,7 @@ const App = () => {
     }, []);
     const repoUrl = "https://github.com/a2rp/video-game-backlog";
     return <div className={styles.appShell} id="top">
-        <SiteHeader title="Continue?" mark="C" repoUrl={repoUrl} navItems={[['Backlog','#backlog'],['Recently played','#recently-played']]} />
+        <SiteHeader title="Continue?" mark="C" repoUrl={repoUrl} navItems={[["Backlog", "#backlog"], ["Your collection", "#your-collection"]]} />
         <main className={styles.pageContent}><VideoGameBacklog /></main>
         <SiteFooter repoUrl={repoUrl} />
         <BackToTop visible={showBackToTop} />

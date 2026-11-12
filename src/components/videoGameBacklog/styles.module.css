@@ -68,5 +68,6 @@
 .recent { display: flex; align-items: baseline; gap: 11px; padding: 0 2px; color: var(--muted); }
 .recent span { color: var(--accent); font-size: 7px; font-weight: 800; letter-spacing: .12em; }
 .recent p { font-size: 8px; }
+.storageWarning { margin: 0 0 12px; padding: 10px 12px; border: 1px solid #7d5734; border-radius: 7px; color: #f0c48b; background: #31271f; font-size: 12px; }
 @media(max-width:900px) { .hero { grid-template-columns: 1fr; gap: 20px; } .nextCard { max-width: 500px; } .addGame { grid-template-columns: 1fr 1fr; } }
 @media(max-width:650px) { .hero { padding: 22px 19px; } .hero h1 { font-size: 42px; } .catalog { padding: 13px; } .catalogHead { align-items: stretch; flex-direction: column; } .search { width: 100%; } .controls { align-items: stretch; flex-direction: column; } .statusFilters { overflow-x: auto; flex-wrap: nowrap; } .statusFilters button { white-space: nowrap; } .platformSelect { justify-content: space-between; } .gameGrid { grid-template-columns: 1fr; } .addGame { grid-template-columns: 1fr; } .addGame > button { justify-content: center; } .recent { flex-direction: column; gap: 4px; } }
